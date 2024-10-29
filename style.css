@@ -6,19 +6,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f4f6;
+    background-color: #052463b4;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #333;
+    color: #11044ee8;
 }
 
 #login-section, #profile-section, #checkin-section {
-    background-color: #ffffff;
+    background-color: #0010eb6c;
     padding: 2em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(2, 71, 39, 0.432);
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -27,14 +27,14 @@ body {
 h1, h2 {
     font-size: 2em;
     margin-bottom: 1em;
-    color: #4a90e2;
+    color: #707706;
 }
 
 input[type="email"], input[type="password"] {
     width: 100%;
     padding: 0.8em;
     margin: 0.5em 0;
-    border: 1px solid #ddd;
+    border: 1px solid #c93d05;
     border-radius: 4px;
     font-size: 1em;
 }
@@ -46,14 +46,14 @@ button {
     background-color: #4a90e2;
     border: none;
     border-radius: 4px;
-    color: white;
+    color: rgba(7, 41, 192, 0.815);
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #357abd;
+    background-color: #19058a;
 }
 
 label {
@@ -63,7 +63,7 @@ label {
 }/* Existing styles remain the same */
 
 #dashboard {
-    background-color: #ffffff;
+    background-color: #03470965;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
