@@ -7,17 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the Church App</h1>
     <div id="login-section">
+        <h1>Welcome to the Church App</h1>
         <input type="email" id="email" placeholder="Email">
         <input type="password" id="password" placeholder="Password">
+        <label>
+            <input type="checkbox" id="rememberMe"> Remember Me
+        </label>
         <button onclick="login()">Login</button>
         <button onclick="signup()">Sign Up</button>
     </div>
+
+    <div id="profile-section" style="display: none;">
+        <h2>Your Profile</h2>
+        <p id="user-email"></p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div id="checkin-section" style="display: none;">
+        <h2>Event Check-In</h2>
+        <p>Show this QR code at the event for check-in:</p>
+        <canvas id="qr-code"></canvas>
+    </div>
+
     <script src="firebase-config.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

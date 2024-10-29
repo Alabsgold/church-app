@@ -1,11 +1,9 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f3f4f6;
@@ -16,8 +14,7 @@ body {
     color: #333;
 }
 
-/* Container styling */
-#login-section {
+#login-section, #profile-section, #checkin-section {
     background-color: #ffffff;
     padding: 2em;
     border-radius: 8px;
@@ -27,16 +24,13 @@ body {
     text-align: center;
 }
 
-/* Header */
-h1 {
+h1, h2 {
     font-size: 2em;
     margin-bottom: 1em;
     color: #4a90e2;
 }
 
-/* Input fields */
-input[type="email"],
-input[type="password"] {
+input[type="email"], input[type="password"] {
     width: 100%;
     padding: 0.8em;
     margin: 0.5em 0;
@@ -45,7 +39,6 @@ input[type="password"] {
     font-size: 1em;
 }
 
-/* Buttons */
 button {
     width: 100%;
     padding: 0.8em;
@@ -59,7 +52,12 @@ button {
     transition: background-color 0.3s;
 }
 
-/* Hover effect for buttons */
 button:hover {
     background-color: #357abd;
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 0.9em;
 }
